@@ -1,7 +1,7 @@
 {
-  "name": "react-boilerplatev2",
+  "name": "investment.reactjs",
   "version": "1.0.0",
-  "description": "Boilerplate code to use with React projects.",
+  "description": "Front-end for investment project",
   "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server --config webpack.dev.config --hot",
@@ -9,21 +9,23 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jafajardo/React-BoilerplateV2.git"
+    "url": "git+https://github.com/jafajardo/Investment.ReactJs.git"
   },
   "keywords": [
     "React",
-    "Boilerplate"
+    "Investment"
   ],
   "author": "Joseph Fajardo",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jafajardo/React-BoilerplateV2/issues"
+    "url": "https://github.com/jafajardo/Investment.ReactJs/issues"
   },
-  "homepage": "https://github.com/jafajardo/React-BoilerplateV2#readme",
+  "homepage": "https://github.com/jafajardo/Investment.ReactJs#readme",
   "dependencies": {
     "axios": "^0.18.0",
+    "chart.js": "^2.7.2",
     "react": "^16.3.2",
+    "react-chartjs-2": "^2.7.4",
     "react-dom": "^16.3.2",
     "react-redux": "^5.0.7",
     "react-router": "^4.2.0",

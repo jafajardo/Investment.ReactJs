@@ -3,13 +3,13 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { browserHistory } from 'react-router';
 
 import Home from './home';
-import Page1 from './page1';
+import Investment from './Investment';
 
 const App = () => (
   <Router history={browserHistory}>
     <Switch>
       <Route exact path="/" component={Home} />
-      <Route path="/Page1" component={Page1} />
+      <Route path="/Investment" component={Investment} />
     </Switch>
   </Router>
 )
