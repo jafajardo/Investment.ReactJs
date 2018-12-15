@@ -11,9 +11,7 @@ class Investment extends Component {
             yearsToInvest: 0,
             interestEarned: 0.0,
             initialInvestment: 0.0,
-            reinvestmentAmount: 0.0,
-            labels: [],
-            chartData: []
+            reinvestmentAmount: 0.0
         }
     }
 
@@ -46,23 +44,13 @@ class Investment extends Component {
             this.state.reinvestmentAmount
         );
     }
-    formatDataForCharting = (calculations) => {
-        let labels = [];
-        let chartData = [];
-        if (calculations) {
-            calculations.map((calc, index) => {
-                this.state.labels.push(`Year ${index + 1}`);
-                this.state.chartData.push(calc);
-            })
-        }
-    }
     renderChart = () => {
         let labels = [];
         let chartData = [];
 
         if (this.props.investmentCalculation.length > 0) {
             this.props.investmentCalculation.map((calc, index) => {
-                labels.push(`Year${index + 1}`);
+                labels.push(`Year ${index + 1}`);
                 chartData.push(calc);
             })
 
@@ -84,7 +72,6 @@ class Investment extends Component {
                             }
                         ]
                     }}
-                    options={{events:['']}}
                 />
             );
         }
